@@ -200,6 +200,7 @@ manager.
 
     sh = gc.open("Example spreadsheet")
 
+    print(f"authorized_user: {authorized_user}")
     print(sh.sheet1.get('A1'))
 
 Once authenticated you must store the returned json string containing your authenticated user information. Provide that details as a python dict
